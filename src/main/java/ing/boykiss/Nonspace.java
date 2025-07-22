@@ -9,8 +9,12 @@ import net.minestom.server.instance.InstanceContainer;
 import net.minestom.server.instance.InstanceManager;
 import net.minestom.server.instance.LightingChunk;
 import net.minestom.server.instance.block.Block;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-class Main {
+class Nonspace {
+    public static final Logger LOGGER = LoggerFactory.getLogger(Nonspace.class);
+
     public static void main(String[] args) {
         MinecraftServer minecraftServer = MinecraftServer.init();
 
