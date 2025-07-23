@@ -1,6 +1,7 @@
 package ing.boykiss;
 
 import ing.boykiss.item.Items;
+import net.kyori.adventure.key.Namespaced;
 import net.minestom.server.MinecraftServer;
 import net.minestom.server.coordinate.Pos;
 import net.minestom.server.entity.Player;
@@ -13,7 +14,8 @@ import net.minestom.server.instance.block.Block;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-class Nonspace {
+public class Nonspace {
+    public static final Namespaced NAMESPACE = () -> "nonspace";
     public static final Logger LOGGER = LoggerFactory.getLogger(Nonspace.class);
 
     public static void main(String[] args) {
