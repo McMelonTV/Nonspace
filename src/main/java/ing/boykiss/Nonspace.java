@@ -1,5 +1,6 @@
 package ing.boykiss;
 
+import ing.boykiss.item.Items;
 import net.minestom.server.MinecraftServer;
 import net.minestom.server.coordinate.Pos;
 import net.minestom.server.entity.Player;
@@ -29,6 +30,8 @@ class Nonspace {
             final Player player = event.getPlayer();
             event.setSpawningInstance(instanceContainer);
             player.setRespawnPoint(new Pos(0, 42, 0));
+
+            player.getInventory().addItemStack(Items.UpgradeShard.createStack());
         });
 
         minecraftServer.start("0.0.0.0", 25565);

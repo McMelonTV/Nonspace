@@ -10,11 +10,10 @@ import net.minestom.server.item.Material;
 import java.util.List;
 
 public class Items {
-    public Item Stick = new Item.Builder()
-            .id("stick")
-            .material(Material.STICK)
-            .name("Stick")
-            .rarity(new StyledComponent("legendary", Style.style(TextColor.fromHexString("#FFD700")), List.of(new SmallCaps())))
-            .itemModel("stick")
+    public static Item UpgradeShard = new Item.Builder()
+            .id("nonspace:upgrade_shard")
+            .material(Material.PRISMARINE_SHARD)
+            .name(new StyledComponent("Upgrade Shard", Style.empty()))
+            .rarity(new StyledComponent("legendary", Style.style(TextColor.fromHexString("#ff8000")), List.of(new SmallCaps())))
             .build();
 }
